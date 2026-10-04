@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projeto Futebol e Alegria | Cadastro</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../imagens/logo.png" alt="Logo da ONG">
+            <span>Projeto Futebol e Alegria</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- TÍTULO -->
+
+        <section class="pagina-titulo pagina-cadastro">
+
+            <div class="container">
+
+                <h1>Cadastro</h1>
+
+                <p>
+                    Cadastre-se para fazer parte das ações e
+                    projetos da nossa organização.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FORMULÁRIO -->
+
+        <section class="cadastro">
+
+            <div class="container">
+
+                <div class="formulario-container">
+
+                    <h2>Formulário de Cadastro</h2>
+
+                    <p>
+                        Preencha os campos abaixo com seus dados.
+                        Os campos marcados com * são obrigatórios.
+                    </p>
+
+                    <form id="formCadastro">
+
+                        <!-- DADOS PESSOAIS -->
+
+                        <fieldset>
+
+                            <legend>Dados pessoais</legend>
+
+                            <div class="campo">
+
+                                <label for="nome">
+                                    Nome completo *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Digite seu nome completo"
+                                    minlength="3"
+                                    maxlength="100"
+                                    required
+                                >
+
+                            </div>
+
+                            <div class="linha-formulario">
+
+                                <div class="campo">
+
+                                    <label for="email">
+                                        E-mail *
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="exemplo@email.com"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="cpf">
+                                        CPF *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="cpf"
+                                        name="cpf"
+                                        placeholder="000.000.000-00"
+                                        maxlength="14"
+                                        inputmode="numeric"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <div class="linha-formulario">
+
+                                <div class="campo">
+
+                                    <label for="telefone">
+                                        Telefone *
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefone"
+                                        name="telefone"
+                                        placeholder="(00) 00000-0000"
+                                        maxlength="15"
+                                        inputmode="numeric"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="nascimento">
+                                        Data de nascimento *
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        id="nascimento"
+                                        name="nascimento"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </fieldset>
+
+                        <!-- ENDEREÇO -->
+
+                        <fieldset>
+
+                            <legend>Endereço</legend>
+
+                            <div class="linha-formulario">
+
+                                <div class="campo">
+
+                                    <label for="cep">
+                                        CEP *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="cep"
+                                        name="cep"
+                                        placeholder="00000-000"
+                                        maxlength="9"
+                                        inputmode="numeric"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="cidade">
+                                        Cidade *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="cidade"
+                                        name="cidade"
+                                        placeholder="Digite sua cidade"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <div class="linha-formulario">
+
+                                <div class="campo">
+
+                                    <label for="endereco">
+                                        Endereço *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="endereco"
+                                        name="endereco"
+                                        placeholder="Rua, Avenida..."
+                                        required
+                                    >
+
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="numero">
+                                        Número *
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        id="numero"
+                                        name="numero"
+                                        placeholder="Número"
+                                        min="1"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="estado">
+                                    Estado *
+                                </label>
+
+                                <select
+                                    id="estado"
+                                    name="estado"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Selecione seu estado
+                                    </option>
+
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+
+                                </select>
+
+                            </div>
+
+                        </fieldset>
+
+                        <!-- PARTICIPAÇÃO -->
+
+                        <fieldset>
+
+                            <legend>Interesse em participar</legend>
+
+                            <div class="campo">
+
+                                <label for="interesse">
+                                    Como você deseja participar?
+                                </label>
+
+                                <select
+                                    id="interesse"
+                                    name="interesse"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Selecione uma opção
+                                    </option>
+
+                                    <option value="voluntario">
+                                        Quero ser voluntário
+                                    </option>
+
+                                    <option value="doador">
+                                        Quero ser doador
+                                    </option>
+
+                                    <option value="ambos">
+                                        Voluntário e doador
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="mensagem">
+                                    Conte um pouco sobre como gostaria
+                                    de ajudar
+                                </label>
+
+                                <textarea
+                                    id="mensagem"
+                                    name="mensagem"
+                                    rows="5"
+                                    maxlength="500"
+                                    placeholder="Digite sua mensagem..."
+                                ></textarea>
+
+                            </div>
+
+                            <div class="checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    id="termos"
+                                    name="termos"
+                                    required
+                                >
+
+                                <label for="termos">
+
+                                    Declaro que as informações
+                                    fornecidas são verdadeiras.
+
+                                </label>
+
+                            </div>
+
+                            <div class="campo">
+
+                                <label for="valorDoacao">
+                                    Você deseja realizar uma doação financeira?
+                                </label>
+
+                                <select id="valorDoacao" name="valorDoacao">
+
+                                    <option value="">
+                                        Selecione uma opção
+                                    </option>
+
+                                    <option value="nao">
+                                        Não desejo realizar uma doação
+                                    </option>
+
+                                    <option value="20">
+                                        R$ 20,00
+                                    </option>
+
+                                    <option value="200">
+                                        R$ 200,00
+                                    </option>
+
+                                    <option value="500">
+                                        R$ 500,00
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro valor
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </fieldset>
+
+                        <!-- BOTÕES -->
+
+                        <div class="botoes-formulario">
+
+                            <button
+                                type="reset"
+                                class="botao-secundario"
+                            >
+                                Limpar
+                            </button>
+
+                            <button
+                                type="submit"
+                                class="botao"
+                            >
+                                Realizar cadastro
+                            </button>
+
+                        </div>
+
+                        <p
+                            id="mensagemSucesso"
+                            class="mensagem-sucesso"
+                        ></p>
+
+                    </form>
+
+                    <!-- TELA DE PAGAMENTO -->
+
+                    <div id="telaPagamento" class="tela-pagamento" style="display: none;">
+
+                        <h2>Pagamento da Doação</h2>
+
+                        <p>
+                            Confira os dados da sua doação antes de continuar.
+                        </p>
+
+                        <div class="resumo-doacao">
+
+                            <h3>Resumo da doação</h3>
+
+                            <p>
+                                <strong>Valor:</strong>
+                                <span id="valorPagamento">R$ 0,00</span>
+                            </p>
+
+                        </div>
+
+                        <div class="campo">
+
+                            <label for="formaPagamento">
+                                Forma de pagamento
+                            </label>
+
+                            <select id="formaPagamento">
+
+                                <option value="">
+                                Selecione uma forma de pagamento
+                                </option>
+
+                                <option value="pix">
+                                    PIX
+                                </option>
+
+                                <option value="cartao">
+                                    Cartão de Crédito
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- PAGAMENTO PIX -->
+
+                        <div id="pagamentoPix" class="pagamento-opcao" style="display: none;">
+
+                            <h3>Pagamento via PIX</h3>
+
+                            <p>
+                                Para esta demonstração, utilize a chave PIX abaixo:
+                            </p>
+
+                            <div class="pix-chave">
+                                doacoes@futebolealegria.org.br.com
+                            </div>
+
+                            <p>
+                                Após realizar o pagamento, clique em
+                                <strong>Confirmar doação</strong>.
+                            </p>
+
+                        </div>
+
+                        <!-- PAGAMENTO CARTÃO -->
+
+                        <div id="pagamentoCartao" class="pagamento-opcao" style="display: none;">
+
+                            <h3>Pagamento com cartão</h3>
+
+                            <div class="campo">
+
+                                <label for="numeroCartao">
+                                    Número do cartão
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="numeroCartao"
+                                    placeholder="0000 0000 0000 0000"
+                                    maxlength="19"
+                                >
+
+                            </div>
+
+                            <div class="linha-formulario">
+
+                                <div class="campo">
+
+                                    <label for="validadeCartao">
+                                        Validade
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="validadeCartao"
+                                        placeholder="MM/AA"
+                                        maxlength="5"
+                                    >
+                                    
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="cvvCartao">
+                                        CVV
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="cvvCartao"
+                                        placeholder="000"
+                                        maxlength="3"
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="botoes-formulario">
+
+                            <button
+                                type="button"
+                                class="botao-secundario"
+                                id="voltarCadastro"
+                            >
+                                Voltar
+                            </button>
+
+                            <button
+                                type="button"
+                                class="botao"
+                                id="confirmarDoacao"
+                            >
+                                Confirmar doação
+                            </button>
+
+                        </div>
+
+                </div>
+
+                <!-- CONFIRMAÇÃO DA DOAÇÃO -->
+
+                <div
+                    id="doacaoConfirmada"
+                    class="doacao-confirmada"
+                    style="display: none;"
+                >
+
+                    <h2>Doação confirmada!</h2>
+
+                    <p>
+                        Agradecemos pela sua contribuição.
+                    </p>
+
+                    <p>
+                        Sua contribuição ajudará a manter os projetos
+                        e ações sociais da nossa organização.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="botao"
+                        onclick="location.reload()"
+                    >
+                        Voltar ao cadastro
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+
+        <p>
+            © 2026 Futebol e Alegria - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Desenvolvido com HTML5, CSS3 e JavaScript.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const cpf = document.getElementById("cpf");
+
+        const telefone = document.getElementById("telefone");
+
+        const cep = document.getElementById("cep");
+
+
+
+        /* MÁSCARA CPF */
+
+        cpf.addEventListener("input", function () {
+
+            let valor = cpf.value.replace(/\D/g, "");
+
+            valor = valor.substring(0, 11);
+
+            valor = valor.replace(
+                /(\d{3})(\d)/,
+                "$1.$2"
+            );
+
+            valor = valor.replace(
+                /(\d{3})(\d)/,
+                "$1.$2"
+            );
+
+            valor = valor.replace(
+                /(\d{3})(\d{1,2})$/,
+                "$1-$2"
+            );
+
+            cpf.value = valor;
+
+        });
+
+        /* MÁSCARA TELEFONE */
+
+        telefone.addEventListener("input", function () {
+
+            let valor = telefone.value.replace(/\D/g, "");
+
+            valor = valor.substring(0, 11);
+
+            if (valor.length <= 10) {
+
+                valor = valor.replace(
+                    /^(\d{2})(\d)/,
+                    "($1) $2"
+                );
+
+                valor = valor.replace(
+                    /(\d{4})(\d)/,
+                    "$1-$2"
+                );
+
+            } else {
+
+                valor = valor.replace(
+                    /^(\d{2})(\d)/,
+                    "($1) $2"
+                );
+
+                valor = valor.replace(
+                    /(\d{5})(\d)/,
+                    "$1-$2"
+                );
+
+            }
+
+            telefone.value = valor;
+
+        });
+
+        /* MÁSCARA CEP */
+
+        cep.addEventListener("input", function () {
+
+            let valor = cep.value.replace(/\D/g, "");
+
+            valor = valor.substring(0, 8);
+
+            valor = valor.replace(
+                /^(\d{5})(\d)/,
+                "$1-$2"
+            );
+
+            cep.value = valor;
+
+        });
+
+        /* ENVIO DO FORMULÁRIO */
+
+        const formulario =
+            document.getElementById("formCadastro");
+
+        const mensagem =
+            document.getElementById("mensagemSucesso");
+
+        const telaPagamento =
+            document.getElementById("telaPagamento");
+        
+        const doacaoConfirmada =
+            document.getElementById("doacaoConfirmada");
+
+        const valorDoacao =
+            document.getElementById("valorDoacao");
+
+        const valorPagamento =
+            document.getElementById("valorPagamento");
+
+        const formaPagamento =
+            document.getElementById("formaPagamento");
+
+        const pagamentoPix =
+            document.getElementById("pagamentoPix");
+
+        const pagamentoCartao =
+            document.getElementById("pagamentoCartao");
+
+        const confirmarDoacao =
+            document.getElementById("confirmarDoacao");
+
+        const voltarCadastro =
+            document.getElementById("voltarCadastro");
+
+        /* ENVIO DO CADASTRO */
+
+        formulario.addEventListener("submit", function (evento) {
+
+            evento.preventDefault();
+
+            const valor = valorDoacao.value;
+
+            /* Se não quiser doar, finaliza apenas o cadastro */
+
+            if (valor === "" || valor === "nao") {
+
+                mensagem.textContent =
+                    "Cadastro realizado com sucesso! Obrigado por fazer parte da nossa ONG.";
+
+                formulario.reset();
+
+                return;
+            }
+
+            /* Define o valor da doação */
+
+            let valorFormatado;
+
+            if (valor === "20") {
+
+                valorFormatado = "R$ 20,00";
+
+            } else if (valor === "200") {
+
+                valorFormatado = "R$ 200,00";
+
+            } else if (valor === "500") {
+
+                valorFormatado = "R$ 500,00";
+
+            } else {
+
+                valorFormatado = "Outro valor";
+
+            }
+
+            /* Mostra o valor na tela de pagamento */
+
+            valorPagamento.textContent = valorFormatado;
+
+            formulario.style.display = "none";
+
+            mensagem.textContent = "";
+
+            telaPagamento.style.display = "block";
+        
+        });
+
+        /* ESCOLHA DA FORMA DE PAGAMENTO */
+
+        formaPagamento.addEventListener("change", function () {
+
+            pagamentoPix.style.display = "none";
+
+            pagamentoCartao.style.display = "none";
+
+            if (formaPagamento.value === "pix") {
+
+                pagamentoPix.style.display = "block";
+
+            }
+
+            if (formaPagamento.value === "cartao") {
+
+                pagamentoCartao.style.display = "block";
+
+            }
+        
+        });
+
+        /* CONFIRMAR DOAÇÃO */
+
+        confirmarDoacao.addEventListener("click", function () {
+
+            if (formaPagamento.value === "") {
+
+                alert("Selecione uma forma de pagamento.");
+
+                return;
+
+            }
+            
+            /* Validação do cartão */
+
+            if (formaPagamento.value === "cartao") {
+
+                const numero =
+                    document.getElementById("numeroCartao").value;
+
+                const validade =
+                    document.getElementById("validadeCartao").value;
+
+                const cvv =
+                    document.getElementById("cvvCartao").value;
+
+                if (
+                    numero === "" ||
+                    validade === "" ||
+                    cvv === ""
+                ) {
+
+                    alert("Preencha todos os dados do cartão.");
+
+                    return;
+                }
+            }
+
+             /* Mostra confirmação */
+
+             telaPagamento.style.display = "none";
+
+             doacaoConfirmada.style.display = "block";
+
+            });
+
+            /* VOLTAR PARA O CADASTRO */
+
+            voltarCadastro.addEventListener("click", function () {
+
+                telaPagamento.style.display = "none";
+
+                formulario.style.display = "block";
+
+            });
+
+    </script>
+
+</body>
+
+</html>

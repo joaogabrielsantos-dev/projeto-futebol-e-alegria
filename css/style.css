@@ -1,0 +1,679 @@
+/* CONFIGS GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #334155;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #164e63;
+}
+
+/* MENU */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #256d85;
+}
+
+/* ÁREA PRINCIPAL */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        rgba(18, 59, 74, 0.5),
+        rgba(18, 59, 74, 0.5)
+    ),
+    url("../imagens/card-futebol.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-conteudo {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #256d85;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #164e63;
+}
+
+/* SESSÕES */
+
+.sobre,
+.principios,
+.projetos,
+.contato {
+    padding: 70px 0;
+}
+
+.sobre {
+    text-align: center;
+}
+
+.sobre h2,
+.principios h2,
+.projetos h2,
+.contato h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #164e63;
+}
+
+.sobre p {
+    max-width: 850px;
+    margin: 0 auto 15px;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    flex: 1;
+    background-color: #e8f3f6;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #256d85;
+    margin-bottom: 15px;
+}
+
+/* PROJETOS */
+
+.projetos {
+    background-color: #e8f3f6;
+}
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+}
+
+.contato-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.contato-info div {
+    padding: 25px;
+    background-color: #e8f3f6;
+    border-radius: 8px;
+}
+
+.contato-info h3 {
+    color: #256d85;
+    margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #123b4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.rodape p {
+    margin: 5px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .contato-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* PÁGINA DE PROJETOS*/
+
+/* TÍTULO DA PÁGINA */
+
+.pagina-titulo {
+
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+
+    background:
+        linear-gradient(
+            rgba(18, 59, 74, 0.72),
+            rgba(18, 59, 74, 0.72)
+        ),
+        url("../imagens/card-projetos.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pagina-titulo p {
+    font-size: 19px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* BANNER DA PÁGINA DE CADASTRO */
+
+.pagina-cadastro {
+    background:
+        linear-gradient(
+            rgba(18, 59, 74, 0.65),
+            rgba(18, 59, 74, 0.65)
+        ),
+        url("../imagens/card-cadastro.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* TEXTO CENTRALIZADO */
+
+.texto-centralizado {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* CARDS DOS PROJETOS */
+
+.projeto-card {
+    min-height: 260px;
+    position: relative;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: white;
+}
+
+/* CAMADA ESCURA SOBRE A IMAGEM */
+
+.projeto-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.20)
+    );
+
+    z-index: 1;
+}
+
+/* TEXTO DO CARD */
+
+.projeto-card h3,
+.projeto-card p {
+    position: relative;
+    z-index: 2;
+
+    color: white;
+}
+
+.projeto-card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* IMAGENS DOS PROJETOS */
+
+.card-futebol {
+    background-image: url("../imagens/card-futebol.jpg");
+}
+
+.card-educacao {
+    background-image: url("../imagens/card-educacao.jpg");
+}
+
+.card-material {
+    background-image: url("../imagens/card-material.jpg");
+}
+
+.card-torneios {
+    background-image: url("../imagens/card-torneios.jpg");
+}
+
+/* VOLUNTARIADO */
+
+.voluntariado {
+    background-color: #f1f7f9;
+    text-align: center;
+}
+
+.voluntariado p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+.voluntariado .botao {
+    margin-top: 35px;
+}
+
+/* DOAÇÕES */
+
+.doacoes {
+    text-align: center;
+}
+
+.doacoes > .container > p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* CHAMADA FINAL */
+
+.chamada {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.chamada h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.chamada p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    .pagina-titulo h1 {
+        font-size: 32px;
+    }
+
+    .pagina-titulo p {
+        font-size: 17px;
+    }
+
+    .projeto-card {
+        min-height: auto;
+    }
+}
+
+/* PÁGINA DE CADASTRO */
+
+.cadastro {
+    padding: 60px 0;
+    background-color: #f1f7f9;
+}
+
+.formulario-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.formulario-container h2 {
+    color: #164e63;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario-container > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* FIELDSET */
+
+fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #164e63;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #256d85;
+}
+
+/* DUAS COLUNAS */
+
+.linha-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
+
+/* BOTÕES */
+
+.botoes-formulario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.botoes-formulario button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* BOTÃO SECUNDÁRIO */
+
+.botao-secundario {
+    background-color: #64748b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.botao-secundario:hover {
+    background-color: #475569;
+}
+
+/* MENSAGEM */
+
+.mensagem-sucesso {
+    color: #4f8a70;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .formulario-container {
+        padding: 25px;
+    }
+
+    .linha-formulario {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .botoes-formulario {
+        flex-direction: column;
+    }
+
+    .botoes-formulario button {
+        width: 100%;
+    }
+
+}
+
+/* HISTÓRIA DA ONG */
+
+.historia,
+.conquistas,
+.equipe,
+.transparencia,
+.noticias,
+.newsletter,
+.imprensa {
+    padding: 60px 0;
+}
+
+.historia {
+    background-color: #e8f3f6;
+}
+
+.linha-do-tempo {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.evento {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(18, 59, 74, 0.08);
+}
+
+.evento h3 {
+    margin-bottom: 10px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    text-align: center;
+    background-color: #e8f3f6;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+/* DOCUMENTOS */
+
+.documentos-publicos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.documentos-publicos .card {
+    flex: 1;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .linha-do-tempo {
+        flex-direction: column;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input {
+        width: 90%;
+    }
+
+}
