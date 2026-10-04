@@ -78,7 +78,6 @@ Projeto_Futebol_e_Alegria/
 │   ├── card-material.jpg
 │   └── card-torneios.jpg
 │
-└── ong/
-    ├── index.html
-    ├── projetos.html
-    └── cadastro.html
+├── index.html
+├── projetos.html
+└── cadastro.html
